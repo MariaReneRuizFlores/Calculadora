@@ -45,5 +45,17 @@ namespace ProyectoCalculadora.Properties.Controllers
         {
             return num1 * num2;
         }
+        [HttpGet]
+        [Route("división")]
+        public int división(int num1, int num2)
+        {
+            return num1 / num2;
+        }
+        [HttpPost]
+        [Route("división")]
+        public int dividir([FromHeader] int num1, [FromHeader] int num2)
+        {
+            return num1 / num2;
+        }
     }
 }
