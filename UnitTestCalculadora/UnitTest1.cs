@@ -93,5 +93,33 @@ namespace UnitTestCalculadora
             //Assert=verificación
             Assert.AreEqual(esperado, resultado);
         }
+        [Test]
+        public void TestDivisión()
+        {
+            //Arrange=Preparación
+            int num1 = 75;
+            int num2 = 25;
+            int esperado = 3;
+            CalculadoraController calt = new CalculadoraController();
+            //Act=ejecución
+            int resultado = calt.división(num1, num2);
+
+            //Assert=verificación
+            Assert.AreEqual(esperado, resultado);
+        }
+        [Test]
+        public void TestDividir()
+        {
+            //Arrange=Preparación
+            int num1 = 50;
+            int num2 = 2;
+            int esperado = 25;
+            CalculadoraController calt = new CalculadoraController();
+            //Act=ejecución
+            int resultado = calt.dividir(num1, num2);
+
+            //Assert=verificación
+            Assert.AreEqual(esperado, resultado);
+        }
     }
 }
