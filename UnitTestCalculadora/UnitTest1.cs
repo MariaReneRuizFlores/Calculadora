@@ -262,7 +262,7 @@ namespace UnitTestCalculadora
             Assert.AreEqual(esperado, resultado);
         }
         [Test]
-        public void TestDivisión()
+        public void TestDivisión1()
         {
             //Arrange=Preparación
             int num1 = 75;
@@ -276,12 +276,68 @@ namespace UnitTestCalculadora
             Assert.AreEqual(esperado, resultado);
         }
         [Test]
-        public void TestDividir()
+        public void TestDivisión2()
+        {
+            //Arrange=Preparación
+            int num1 = 70;
+            int num2 = 2;
+            int esperado = 35;
+            CalculadoraController calt = new CalculadoraController();
+            //Act=ejecución
+            int resultado = calt.división(num1, num2);
+
+            //Assert=verificación
+            Assert.AreEqual(esperado, resultado);
+        }
+        [Test]
+        public void TestDivisión3()
+        {
+            //Arrange=Preparación
+            int num1 = 10;
+            int num2 = 3;
+            int esperado = 3;
+            CalculadoraController calt = new CalculadoraController();
+            //Act=ejecución
+            int resultado = calt.división(num1, num2);
+
+            //Assert=verificación
+            Assert.AreEqual(esperado, resultado);
+        }
+        [Test]
+        public void TestDividir1()
         {
             //Arrange=Preparación
             int num1 = 50;
             int num2 = 2;
             int esperado = 25;
+            CalculadoraController calt = new CalculadoraController();
+            //Act=ejecución
+            int resultado = calt.dividir(num1, num2);
+
+            //Assert=verificación
+            Assert.AreEqual(esperado, resultado);
+        }
+        [Test]
+        public void TestDividir2()
+        {
+            //Arrange=Preparación
+            int num1 = 50;
+            int num2 = 3;
+            int esperado = 16;
+            CalculadoraController calt = new CalculadoraController();
+            //Act=ejecución
+            int resultado = calt.dividir(num1, num2);
+
+            //Assert=verificación
+            Assert.AreEqual(esperado, resultado);
+        }
+        [Test]
+        public void TestDividir3()
+        {
+            //Arrange=Preparación
+            int num1 = -21;
+            int num2 = -7;
+            int esperado = 3;
             CalculadoraController calt = new CalculadoraController();
             //Act=ejecución
             int resultado = calt.dividir(num1, num2);
