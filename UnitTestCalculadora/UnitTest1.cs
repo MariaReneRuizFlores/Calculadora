@@ -178,7 +178,7 @@ namespace UnitTestCalculadora
             Assert.AreEqual(esperado, resultado);
         }
         [Test]
-        public void TestMultiplicación()
+        public void TestMultiplicación1()
         {
             //Arrange=Preparación
             int num1 = 2;
@@ -192,12 +192,68 @@ namespace UnitTestCalculadora
             Assert.AreEqual(esperado, resultado);
         }
         [Test]
-        public void TestMultiplicar()
+        public void TestMultiplicación2()
+        {
+            //Arrange=Preparación
+            int num1 = 2;
+            int num2 = 13;
+            int esperado = 26;
+            CalculadoraController calt = new CalculadoraController();
+            //Act=ejecución
+            int resultado = calt.multiplicación(num1, num2);
+
+            //Assert=verificación
+            Assert.AreEqual(esperado, resultado);
+        }
+        [Test]
+        public void TestMultiplicación3()
+        {
+            //Arrange=Preparación
+            int num1 = -3;
+            int num2 = 7;
+            int esperado = -21;
+            CalculadoraController calt = new CalculadoraController();
+            //Act=ejecución
+            int resultado = calt.multiplicación(num1, num2);
+
+            //Assert=verificación
+            Assert.AreEqual(esperado, resultado);
+        }
+        [Test]
+        public void TestMultiplicar1()
         {
             //Arrange=Preparación
             int num1 = 15;
             int num2 = 3;
             int esperado = 45;
+            CalculadoraController calt = new CalculadoraController();
+            //Act=ejecución
+            int resultado = calt.multiplicar(num1, num2);
+
+            //Assert=verificación
+            Assert.AreEqual(esperado, resultado);
+        }
+        [Test]
+        public void TestMultiplicar2()
+        {
+            //Arrange=Preparación
+            int num1 = -12;
+            int num2 = -4;
+            int esperado = 48;
+            CalculadoraController calt = new CalculadoraController();
+            //Act=ejecución
+            int resultado = calt.multiplicar(num1, num2);
+
+            //Assert=verificación
+            Assert.AreEqual(esperado, resultado);
+        }
+        [Test]
+        public void TestMultiplicar3()
+        {
+            //Arrange=Preparación
+            int num1 = 6;
+            int num2 = 5;
+            int esperado = 30;
             CalculadoraController calt = new CalculadoraController();
             //Act=ejecución
             int resultado = calt.multiplicar(num1, num2);
