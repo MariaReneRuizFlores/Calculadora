@@ -10,7 +10,7 @@ namespace UnitTestCalculadora
         {
         }
         [Test]
-        public void TestSuma()
+        public void TestSuma1()
         {
             //Arrange=Preparación
             int num1 = 5;
@@ -24,7 +24,63 @@ namespace UnitTestCalculadora
             Assert.AreEqual(esperado, resultado);
         }
         [Test]
-        public void TestSumar()
+        public void TestSuma2()
+        {
+            //Arrange=Preparación
+            int num1 = 5;
+            int num2 = 7;
+            int esperado = 12;
+            CalculadoraController calt = new CalculadoraController();
+            //Act=ejecución
+            int resultado = calt.suma(num1, num2);
+
+            //Assert=verificación
+            Assert.AreEqual(esperado, resultado);
+        }
+        [Test]
+        public void TestSuma3()
+        {
+            //Arrange=Preparación
+            int num1 = 5;
+            int num2 = 7;
+            int esperado = 12;
+            CalculadoraController calt = new CalculadoraController();
+            //Act=ejecución
+            int resultado = calt.suma(num1, num2);
+
+            //Assert=verificación
+            Assert.AreEqual(esperado, resultado);
+        }
+        [Test]
+        public void TestSumar1()
+        {
+            //Arrange=Preparación
+            int num1 = 5;
+            int num2 = 7;
+            int esperado = 12;
+            CalculadoraController calt = new CalculadoraController();
+            //Act=ejecución
+            int resultado = calt.sumar(num1, num2);
+
+            //Assert=verificación
+            Assert.AreEqual(esperado, resultado);
+        }
+        [Test]
+        public void TestSumar2()
+        {
+            //Arrange=Preparación
+            int num1 = 5;
+            int num2 = 7;
+            int esperado = 12;
+            CalculadoraController calt = new CalculadoraController();
+            //Act=ejecución
+            int resultado = calt.sumar(num1, num2);
+
+            //Assert=verificación
+            Assert.AreEqual(esperado, resultado);
+        }
+        [Test]
+        public void TestSumar3()
         {
             //Arrange=Preparación
             int num1 = 5;
